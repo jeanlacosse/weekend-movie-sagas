@@ -16,6 +16,18 @@ router.get('/', (req, res) => {
 
 });
 
+router.get('/:id', (req, res) => {
+  // need to select movie data and the id from DB
+  const queryText = 'SELECT * FROM plant WHERE id=$1';
+  pool.query(queryText, [req.params.id])
+    .then((result) => { res.send(result.rows); })
+    .catch((err) => {
+      console.log('Error completing SELECT movieDetails query', err);
+      res.sendStatus(500);
+    });
+});
+
+
 router.post('/', (req, res) => {
   console.log(req.body);
   // RETURNING "id" will give us back the id of the created movie
