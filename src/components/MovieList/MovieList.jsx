@@ -4,10 +4,23 @@ import './MovieList.css';
 import { useHistory, Link } from 'react-router-dom';
 import MovieItem from '../MovieDetails/MovieItem';
 
+// Material UI
+import { styled } from '@mui/material/styles';
+import Box from '@mui/material/Box';
+import Paper from '@mui/material/Paper';
+import Grid from '@mui/material/Grid';
+
 
 function MovieList() {
 
-    const history = useHistory();
+    const Item = styled(Paper)(({ theme }) => ({
+        backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+        ...theme.typography.body2,
+        padding: theme.spacing(1),
+        textAlign: 'center',
+        color: theme.palette.text.secondary,
+    }));
+
     const dispatch = useDispatch();
     const movies = useSelector(store => store.movies);
     console.log('movies', movies)
@@ -16,20 +29,30 @@ function MovieList() {
         dispatch({ type: 'FETCH_MOVIES' });
     }, []);
 
-    
+
 
 
 
     return (
         <main>
             <h1>MovieList</h1>
-            <section className="movies">
-                {movies.map((movie) => {
-                    return (
-                        <MovieItem key={movie.id} movie={movie} />
-                    );
-                })}
-            </section>
+            {/* <section className="movies"> */}
+            <Box sx={{ flexGrow: 1 }}>
+                <Grid container spacing={3}>
+                    {movies.map((movie) => {
+                        return (
+                            <Grid 
+                            item xs
+                            key={movie.id}>
+                                <Item>
+                                    <MovieItem movie={movie} />
+                                </Item>
+                            </Grid>
+                        );
+                    })}
+                    {/* </section> */}
+                </Grid>
+            </Box>
         </main>
 
     );

@@ -1,4 +1,4 @@
-[] movie poster onClick send to /details
+[x] movie poster onClick send to /details
     [x] do with history.push router
         [x] history page shows all movie genres, title, desciption, img
             [x] sent from server, GET req to that specific movie from .map
