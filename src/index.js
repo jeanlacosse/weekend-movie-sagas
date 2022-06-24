@@ -22,7 +22,7 @@ function* fetchMovieDetails(action) {
     // set the specific movie detail per id from DB
     try {
         const movieData = yield axios.get(`/api/movie/${action.payload}`);
-        yield put({ type: 'SET_MOVIE_DETAILS', payload: movieData });
+        yield put({ type: 'SET_MOVIE_DETAILS', payload: movieData.data });
     } catch {
         console.log('get details error');
     }
