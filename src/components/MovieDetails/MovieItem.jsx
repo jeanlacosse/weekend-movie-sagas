@@ -1,14 +1,16 @@
 // Here make GET request to specific ID for the details of specific movie
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { useHistory, Link } from 'react-router-dom';
 
 function MovieItem(movie) {
 
     const history = useHistory();
     const dispatch = useDispatch();
+    console.log('movie', movie)
 
     useEffect(() => {
-        console.log(movie)
+      
     })
 
 
@@ -24,8 +26,9 @@ function MovieItem(movie) {
     }
 
     return (
-
-        <div  >
+        <>
+        {movie &&
+        <div>
             <h3>{movie.movie.title}</h3>
             <img
                 src={movie.movie.poster}
@@ -35,6 +38,8 @@ function MovieItem(movie) {
             onClick={setMovieDetails}
             />
         </div>
+        }
+        </>
     )
 }
 
