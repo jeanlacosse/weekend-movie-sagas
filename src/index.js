@@ -18,15 +18,14 @@ function* rootSaga() {
     yield takeEvery('FETCH_MOVIE_DETAILS', fetchMovieDetails);
 }
 
-function* fetchMovieDetails() {
+function* fetchMovieDetails(action) {
     // set the specific movie detail per id from DB
     try {
-        const movieData = yield axios.get('/api/movie/:id');
+        const movieData = yield axios.get(`/api/movie/${action.payload}`);
         yield put({ type: 'SET_MOVIE_DETAILS', payload: movieData });
     } catch {
         console.log('get details error');
     }
-
 }
 
 function* fetchAllMovies() {
@@ -35,7 +34,6 @@ function* fetchAllMovies() {
         const movies = yield axios.get('/api/movie');
         console.log('get all:', movies.data);
         yield put({ type: 'SET_MOVIES', payload: movies.data });
-
     } catch {
         console.log('get all error');
     }

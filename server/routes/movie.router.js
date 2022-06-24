@@ -17,8 +17,24 @@ router.get('/', (req, res) => {
 });
 
 router.get('/:id', (req, res) => {
-  // need to select movie data and the id from DB
-  const queryText = 'SELECT * FROM plant WHERE id=$1';
+  // need to select movie data and the id from DB using below command
+
+  const queryText = `
+  SELECT 
+	movies.title,
+	array_agg(genres.name) AS all_genres,
+	movies.description,
+	movies.poster
+FROM movies_genres
+JOIN genres
+    ON genres.id = movies_genres.genre_id
+JOIN movies
+    ON movies.id = movies_genres.movie_id
+WHERE movies.id = $1
+    GROUP BY 
+    movies.title,
+    movies.description,
+    movies.poster;`;
   pool.query(queryText, [req.params.id])
     .then((result) => { res.send(result.rows); })
     .catch((err) => {

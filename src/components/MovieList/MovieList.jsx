@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import './MovieList.css';
-import { useHistory, Link} from 'react-router-dom';
-import MovieDetails from '../MovieDetails/MovieDetails';
+import { useHistory, Link } from 'react-router-dom';
+import MovieItem from '../MovieDetails/MovieItem';
+
 
 function MovieList() {
 
@@ -15,7 +16,7 @@ function MovieList() {
     }, []);
 
 
-    
+
 
     return (
         <main>
@@ -23,10 +24,7 @@ function MovieList() {
             <section className="movies">
                 {movies.map((movie) => {
                     return (
-                        
-                            <MovieDetails key={movie.id} movie={movie}/>
-                        
-                        
+                        <MovieItem key={movie.id} movie={movie} />
                     );
                 })}
             </section>
