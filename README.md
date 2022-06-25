@@ -33,7 +33,6 @@ I was looking to use redux-sagas in order to pass information across the app and
 6. The `npm run client` command will open up a new browser tab for you!
 
 ## Usage
-How does someone use this application? Tell a user story here.
 
 1. Click on any of the movie titles or posters
 2. This will navigate you to the details of that movie
