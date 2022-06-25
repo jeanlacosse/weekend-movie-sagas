@@ -35,18 +35,18 @@ function MovieList() {
 
     return (
         <main>
-            <h1>MovieList</h1>
+            <h1 className='header'>MovieList</h1>
             {/* <section className="movies"> */}
             <Box sx={{ flexGrow: 1 }}>
                 <Grid container spacing={3}>
                     {movies.map((movie) => {
                         return (
                             <Grid 
-                            item xs
+                            item xs={12} sm={6} md={4} lg={2}
                             key={movie.id}>
-                                <Item>
+                                {/* <Item> */}
                                     <MovieItem movie={movie} />
-                                </Item>
+                                {/* </Item> */}
                             </Grid>
                         );
                     })}
