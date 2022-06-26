@@ -2,3 +2,8 @@
     display : flex;
     flex-wrap: wrap;
 }
+
+
+.newMovie {
+    margin: 1px;
+}

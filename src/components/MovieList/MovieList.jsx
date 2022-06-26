@@ -29,6 +29,7 @@ function MovieList() {
 
     useEffect(() => {
         dispatch({ type: 'FETCH_MOVIES' });
+        dispatch({ type: 'FETCH_GENRES' });
     }, []);
 
     return (
@@ -38,6 +39,7 @@ function MovieList() {
             </h1>
                 <Button 
                 variant='contained'
+                className="newMovie"
                 onClick={() => { history.push('/newMovieForm') }}>
                     Add a New Movie
                 </Button>
