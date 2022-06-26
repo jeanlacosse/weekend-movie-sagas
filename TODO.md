@@ -6,12 +6,12 @@
         [x] has back to list button to bring back to homepage
             [x] also use history.push here in routes
 
-[] material UI
-    [] add cards to posters on list page
-        [] put the movies in a grid
+[x] material UI
+    [x] add cards to posters on list page
+        [x] put the movies in a grid
 
-[] 15 + commits!
-    [] comment my code to make it easy to understand
-    [] update the README
+[x] 15 + commits!
+    [x] comment my code to make it easy to understand
+    [x] update the README
 
-[] look into stretch goals, this will be seen by an employer!
+[x] look into stretch goals

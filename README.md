@@ -21,6 +21,7 @@ I was looking to use redux-sagas in order to pass information across the app and
 - Redux-Sagas
 - Axios
 - Material UI
+- PostgreSQL
 
 
 ## Installation
@@ -46,6 +47,7 @@ I was looking to use redux-sagas in order to pass information across the app and
 - Redux-Sagas
 - Axios
 - Material UI
+- PostgreSQL
 
 ## Acknowledgement
 Thanks to [Prime Digital Academy](www.primeacademy.io) who equipped and helped me to make this application a reality.

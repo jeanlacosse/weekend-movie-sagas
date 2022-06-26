@@ -16,6 +16,7 @@ function* rootSaga() {
     yield takeEvery('FETCH_MOVIES', fetchAllMovies);
     // specific Fetch here
     yield takeEvery('FETCH_MOVIE_DETAILS', fetchMovieDetails);
+    yield takeEvery('ADD_NEW_MOVIE', setNewMovie);
 }
 
 function* fetchMovieDetails(action) {
@@ -38,6 +39,16 @@ function* fetchAllMovies() {
         console.log('get all error');
     }
 
+}
+
+// run an axios to send the values for the new movie here
+function* setNewMovie(action) {
+    try {
+        yield axios.post('/api/movie', action.payload);
+        yield put({ type: 'SET_MOVIES' });
+    } catch (error) {
+        console.error('post movies error', error);
+    }
 }
 
 // Create sagaMiddleware
@@ -63,7 +74,7 @@ const genres = (state = [], action) => {
     }
 }
 
-// Used to store movies returned from the server
+// Used to store each movie detail
 const movieDetails = (state = [], action) => {
     switch (action.type) {
         case 'SET_MOVIE_DETAILS':

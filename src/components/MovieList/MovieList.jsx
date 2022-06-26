@@ -9,10 +9,11 @@ import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
+import Button from '@mui/material/Button';
 
 
 function MovieList() {
-
+    // this is for material UI
     const Item = styled(Paper)(({ theme }) => ({
         backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
         ...theme.typography.body2,
@@ -21,6 +22,7 @@ function MovieList() {
         color: theme.palette.text.secondary,
     }));
 
+    const history = useHistory();
     const dispatch = useDispatch();
     const movies = useSelector(store => store.movies);
     console.log('movies', movies)
@@ -29,23 +31,26 @@ function MovieList() {
         dispatch({ type: 'FETCH_MOVIES' });
     }, []);
 
-
-
-
-
     return (
         <main>
-            <h1 className='header'>MovieList</h1>
+            <h1 className='header'>
+                MovieList
+            </h1>
+                <Button 
+                variant='contained'
+                onClick={() => { history.push('/newMovieForm') }}>
+                    Add a New Movie
+                </Button>
             {/* <section className="movies"> */}
             <Box sx={{ flexGrow: 1 }}>
                 <Grid container spacing={3}>
                     {movies.map((movie) => {
                         return (
-                            <Grid 
-                            item xs={12} sm={6} md={4} lg={2}
-                            key={movie.id}>
+                            <Grid
+                                item xs={12} sm={6} md={4} lg={2}
+                                key={movie.id}>
                                 {/* <Item> */}
-                                    <MovieItem movie={movie} />
+                                <MovieItem movie={movie} />
                                 {/* </Item> */}
                             </Grid>
                         );
