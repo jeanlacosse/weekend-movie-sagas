@@ -13,13 +13,13 @@ function MovieForm() {
         setNewMovieData.title(event.target.value);
     }
     const handleMovieImgUrl = (event) => {
-        setNewMovieData.title(event.target.value);
+        setNewMovieData.poster(event.target.value);
     }
     const handleMovieDescription = (event) => {
-        setNewMovieData.title(event.target.value);
+        setNewMovieData.description(event.target.value);
     }
     const handleMovieGenre = (event) => {
-        setNewMovieData.title(event.target.value);
+        setNewMovieData.genre_id(event.target.value);
     }
 
     const addNewMovie = (event) => {
