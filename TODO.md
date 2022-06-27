@@ -15,3 +15,14 @@
     [x] update the README
 
 [x] look into stretch goals
+
+added features
+    [] background image for all pages
+    [] change all images to Links to specific id on the movieList map
+    [] make header prettier
+    [] allow prev/next buttons
+    [] imported new photos will be sized correctly
+    [] add fun fonts
+
+Always plan out the basic pieces of the app first
+    - it doesn't have to be perfect, just create the 'handrails' to keep me centered while I create the outline of the app

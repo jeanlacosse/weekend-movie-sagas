@@ -47,7 +47,9 @@ function MovieList() {
             <Box sx={{ flexGrow: 1 }}>
                 <Grid container spacing={3}>
                     {movies.map((movie) => {
+                        // if remove {} can then get rid of the return, but the {} wil allow extra code inside the function block
                         return (
+                            // Make the MovieItem a Link to /details/movie.id
                             <Grid
                                 item xs={12} sm={6} md={4} lg={2}
                                 key={movie.id}>

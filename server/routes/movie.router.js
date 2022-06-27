@@ -2,6 +2,8 @@ const express = require('express');
 const router = express.Router();
 const pool = require('../modules/pool')
 
+
+// return a list of movies
 router.get('/', (req, res) => {
 
   const query = `SELECT * FROM movies ORDER BY "title" ASC`;
@@ -17,6 +19,7 @@ router.get('/', (req, res) => {
 
 });
 
+// returns movie specific information
 router.get('/:id', (req, res) => {
   // need to select movie data and the id from DB using below command
 
@@ -36,7 +39,11 @@ WHERE movies.id = $1
     movies.title,
     movies.description,
     movies.poster;`;
+
   pool.query(queryText, [req.params.id])
+  // this would have been a better place to pick out index of 0 of the result.rows
+  // rather than in MovieDetails
+  // want to check that the /:id url exists, if not send the error back to console
     .then((result) => { res.send(result.rows); })
     .catch((err) => {
       console.log('Error completing SELECT movieDetails query', err);

@@ -4,11 +4,6 @@ import './Details-Items.css';
 
 // material UI
 import Button from '@mui/material/Button';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import Typography from '@mui/material/Typography';
-import CardMedia from '@mui/material/CardMedia';
 
 
 function MovieDetails() {
@@ -25,17 +20,17 @@ function MovieDetails() {
                 <div>
 
                     <h2 className='movie-title'>{movieDetails[0].title}</h2>
-                    <h3>Genres:
+                    <h3>Genres: 
                         {movieDetails[0].all_genres.map((genre) => {
                             return (
                                 <span key={genre}>{genre} </span>
                             )
                         })}
                     </h3>
+                    <img src={movieDetails[0].poster} alt="" />
                     <p className="detail-description">
                         {movieDetails[0].description}
                     </p>
-                    <img src={movieDetails[0].poster} alt="" />
 
                 </div>
             }

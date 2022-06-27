@@ -31,7 +31,7 @@ function* fetchMovieDetails(action) {
 }
 
 function* fetchAllMovies() {
-    // get all movies from the DB
+    // get all movies from the DB, set in store
     try {
         const movies = yield axios.get('/api/movie');
         console.log('get all:', movies.data);
@@ -43,7 +43,7 @@ function* fetchAllMovies() {
 }
 
 function* fetchAllGenres() {
-    // get all movies from the DB
+    // get all genres from the DB
     try {
         const genres = yield axios.get('/api/genre');
         console.log('get all:', genres.data);
