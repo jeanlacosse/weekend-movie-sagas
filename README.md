@@ -48,7 +48,8 @@ I was looking to use redux-sagas in order to pass information across the app and
 - Axios
 - Material UI
 - PostgreSQL
-<p dir="auto"><a href="/https://github.com/jeanlacosse"><img
+
+   <p dir="auto"><a href="/https://github.com/jeanlacosse"><img
             src="https://camo.githubusercontent.com/9d07c04bdd98c662d5df9d4e1cc1de8446ffeaebca330feb161f1fb8e1188204/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4a6176615363726970742d4637444631453f7374796c653d666f722d7468652d6261646765266c6f676f3d6a617661736372697074266c6f676f436f6c6f723d626c61636b"
             alt="JavaScript"
             data-canonical-src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&amp;logo=javascript&amp;logoColor=black"
@@ -73,7 +74,7 @@ I was looking to use redux-sagas in order to pass information across the app and
             alt="Redux"
             data-canonical-src="https://img.shields.io/badge/Redux--Sagas-20232A?style=for-the-badge&amp;logo=reduxsaga&amp;logoColor=61DAFB"
             style="max-width: 100%;"></a>
-  
+    
     <a href="/https://github.com/jeanlacosse/"><img
             src="https://camo.githubusercontent.com/4f9d20f3a284d2f6634282f61f82a62e99ee9906537dc9859decfdc9efbb51ec/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f52656163745f526f757465722d4341343234353f7374796c653d666f722d7468652d6261646765266c6f676f3d72656163742d726f75746572266c6f676f436f6c6f723d7768697465"
             alt="ReactRouter"
@@ -99,13 +100,12 @@ I was looking to use redux-sagas in order to pass information across the app and
             alt="postgreSQL"
             data-canonical-src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&amp;logo=postgresql&amp;logoColor=white"
             style="max-width: 100%;"></a>
-    
+   
     <a href="/https://github.com/jeanlacosse/"><img
             src="https://camo.githubusercontent.com/6f61ce982d7a61713d63c947148300012945bd4a4cafb8b9313e2426c5a1f273/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f457870726573732e6a732d3430344435393f7374796c653d666f722d7468652d6261646765"
             alt="Express" data-canonical-src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge"
             style="max-width: 100%;"></a>
 </p>
-
 ## Acknowledgement
 Thanks to [Prime Digital Academy](www.primeacademy.io) who equipped and helped me to make this application a reality.
 
