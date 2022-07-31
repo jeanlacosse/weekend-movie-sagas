@@ -73,11 +73,7 @@ I was looking to use redux-sagas in order to pass information across the app and
             alt="Redux"
             data-canonical-src="https://img.shields.io/badge/Redux--Sagas-20232A?style=for-the-badge&amp;logo=reduxsaga&amp;logoColor=61DAFB"
             style="max-width: 100%;"></a>
-    <a href="/https://github.com/jeanlacosse/"><img
-            src="https://camo.githubusercontent.com/3bcc8da5c94cefdf2d976837d1be601f4d44d36b58d9590e36debe834a6e34de/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4865726f6b752d3433303039383f7374796c653d666f722d7468652d6261646765266c6f676f3d6865726f6b75266c6f676f436f6c6f723d7768697465"
-            alt="Heroku"
-            data-canonical-src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&amp;logo=heroku&amp;logoColor=white"
-            style="max-width: 100%;"></a>
+  
     <a href="/https://github.com/jeanlacosse/"><img
             src="https://camo.githubusercontent.com/4f9d20f3a284d2f6634282f61f82a62e99ee9906537dc9859decfdc9efbb51ec/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f52656163745f526f757465722d4341343234353f7374796c653d666f722d7468652d6261646765266c6f676f3d72656163742d726f75746572266c6f676f436f6c6f723d7768697465"
             alt="ReactRouter"
@@ -103,10 +99,7 @@ I was looking to use redux-sagas in order to pass information across the app and
             alt="postgreSQL"
             data-canonical-src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&amp;logo=postgresql&amp;logoColor=white"
             style="max-width: 100%;"></a>
-    <a href="/https://github.com/jeanlacosse/"><img
-            src="https://camo.githubusercontent.com/5e5b58b1aa31ee768e6776a4082db16b867a00eebadbf04a076868392da60bac/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f50617373706f72742e6a732d3230323332413f7374796c653d666f722d7468652d6261646765"
-            alt="Passport" data-canonical-src="https://img.shields.io/badge/Passport.js-20232A?style=for-the-badge"
-            style="max-width: 100%;"></a>
+    
     <a href="/https://github.com/jeanlacosse/"><img
             src="https://camo.githubusercontent.com/6f61ce982d7a61713d63c947148300012945bd4a4cafb8b9313e2426c5a1f273/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f457870726573732e6a732d3430344435393f7374796c653d666f722d7468652d6261646765"
             alt="Express" data-canonical-src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge"
